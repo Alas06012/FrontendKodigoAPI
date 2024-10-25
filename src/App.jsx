@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 import Login from './Auth/Login';
 import ProtectedRoute from './Auth/ProtectedRoute';
