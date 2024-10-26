@@ -116,19 +116,19 @@ export default function Register() {
                 <h2 className="text-2xl fw-bold">
                     <span style={{ color: '#803cae' }}>Registro de Usuarios</span>
                 </h2>
-                <hr className="mb-4" />
+                <hr className="mb-4"/>
                 <form onSubmit={handleSubmit(handleRegister, onError)}>
                     <div className="mb-3">
                         <label className="form-label"> Nombre de Usuario: </label>
                         <input className="form-control"
-                            type="text"
+                            type="text"  placeholder="Nombre usuario"
                             {...register("username", { required: "El nombre de usuario es obligatorio" })}
                         />
                     </div>
                     <div className="mb-4">
                         <label className="form-label">Contraseña: </label>
                         <input className="form-control"
-                            type="password"
+                            type="password" placeholder="********"
                             {...register("password", { required: "La contraseña es obligatoria" })}
                         />
                     </div>
