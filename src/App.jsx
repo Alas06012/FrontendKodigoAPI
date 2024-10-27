@@ -1,7 +1,8 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/BootcampsLanding.css';
 
 
 import Login from './Auth/Login';
@@ -12,13 +13,16 @@ import LandingPage from './Landing/Landing'
 import Register from './Register/Register'
 import PageNotFound from './PageNotFound'
 
+//Componentes
+import {Navbar} from './components/Navbar';
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
 
   return (
-    <>
+    <section className='router-container px-2'>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
@@ -33,11 +37,11 @@ export default function App() {
             }
           />
 
-          /** PAGINA 404 **/
+          {/** PAGINA 404 **/}
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </section>
   )
 }
 
