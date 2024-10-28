@@ -24,9 +24,9 @@ export default function Footer(){
           <Col md={4}>
             <h5>Conéctate con nosotros</h5>
             <div className="d-flex mb-3">
-              <a href="#" className="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" className="text-white me-3"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" className="text-white"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" className="text-white me-3"><i className="fa-brands fa-facebook-f"></i></a>
+              <a href="#" className="text-white me-3"><i className="fa-brands fa-instagram"></i></a>
+              <a href="#" className="text-white"><i className="fa-brands fa-youtube"></i></a>
             </div>
             <h5>Conoce más de nuestros bootcamps</h5>
             <Form>
@@ -40,7 +40,7 @@ export default function Footer(){
       </div>
 
       <a href="#" className="scroll-to-top">
-      <i class="fa-solid fa-chevron-up"></i>
+      <i className="fa-solid fa-chevron-up"></i>
       </a>
     </footer>
   );

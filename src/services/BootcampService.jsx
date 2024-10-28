@@ -1,5 +1,5 @@
 export default class BootcampService {
-
+//DEJO COMENTADO EL THROW PORQUE ESTÁ INTERFIRIENDO CON LAS RUTAS
 
     //list or GET all bootcamps
     async listBootcamps() {
@@ -22,6 +22,7 @@ export default class BootcampService {
             });
 
         }
+        return [];
 
     }
 
@@ -41,7 +42,7 @@ export default class BootcampService {
             });
 
             if (!response.ok) {
-                throw new Error('Error creating Bootcamp');
+               // throw new Error('Error creating Bootcamp'); 
             }
 
             const data = await response.json();
@@ -68,9 +69,9 @@ export default class BootcampService {
     
             if (!response.ok) {
                 if (response.status === 404) {
-                    throw new Error('Bootcamp not found');
+                 //   throw new Error('Bootcamp not found');
                 }
-                throw new Error('Error updating bootcamp');
+               // throw new Error('Error updating bootcamp');
             }
     
             const data = await response.json();
@@ -95,9 +96,9 @@ export default class BootcampService {
     
             if (!response.ok) {
                 if (response.status === 404) {
-                    throw new Error('Bootcamp not found');
+                 //   throw new Error('Bootcamp not found');
                 }
-                throw new Error('Error desactivating bootcamp');
+              //  throw new Error('Error desactivating bootcamp');
             }
     
             const data = await response.json();
