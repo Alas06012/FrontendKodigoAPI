@@ -15,7 +15,6 @@ export const BootcampForm = ({ bootcamp, onComplete }) => {
         setValue('description', bootcamp?.description);
         setValue('technologies', bootcamp?.technologies.join(","));
         setValue('id', bootcamp?.id);
-        console.log(bootcamp);
     }, []);
 
     //SAVE & ADD BOOTCAMP

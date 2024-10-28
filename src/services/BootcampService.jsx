@@ -1,5 +1,6 @@
 export default class BootcampService {
 
+
     //list or GET all bootcamps
     async listBootcamps() {
         const response = await fetch('http://localhost:5000/api/auth/bootcamps/all', {

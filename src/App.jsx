@@ -19,7 +19,7 @@ export default function App() {
   //const [count, setCount] = useState(0)
 
   return (
-    <section className='router-container px-2'>
+    <section className='router-container'>
       <BrowserRouter>
         <Navbar />
         <Routes>

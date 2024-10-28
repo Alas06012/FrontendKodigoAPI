@@ -2,6 +2,7 @@ import BootcampService from "../services/BootcampService";
 import { useEffect, useState } from 'react';
 import { BootcampForm } from "./BootcampForm";
 import '../assets/CSS/dashboard.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 
 export default function Dashboard() {
@@ -63,6 +64,10 @@ export default function Dashboard() {
 
     return (
         <>
+        
+        <h1 className='fs-1 text-white container'><strong>Agrega, Edita o Elimina los Bootcamps</strong></h1>
+        
+        <div className="pt-5 container table-responsive">
             <table className="table table-striped">
                 <thead>
                     <tr>
@@ -89,7 +94,8 @@ export default function Dashboard() {
                     {bootcamps.map(renderBootcampRow)}
                 </tbody>
             </table>
-            <div className="button-container">
+            </div>
+            <div className="button-container container">
                 <button type="button" className="btn btn-primary btn-primary-lg custom-add-btn" data-bs-toggle="modal" onClick={() => { setActiveBootcamp(null) }} data-bs-target="#editModal"><i className="fas fa-plus"></i></button>
             </div>
             <div className="modal fade" id="editModal" tabIndex="-1">
@@ -108,6 +114,7 @@ export default function Dashboard() {
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
