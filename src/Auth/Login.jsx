@@ -63,7 +63,6 @@ export default function Login() {
             <div className="w-100" style={{ maxWidth: '400px' }}>
                 <div className="text-center mb-4">
                     <svg className="mb-3" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* Contenido del SVG */}
                     </svg>
                     <h2 className="text-2xl fw-bold">
                         <span className="text-secondary">Ko</span>
@@ -77,20 +76,20 @@ export default function Login() {
 
                 <form onSubmit={handleLogin}>
                     <div className="mb-3">
-                        <label htmlFor="email" className="form-label">Email</label>
+                        <label htmlFor="email" className="form-label">Nombre de Usuario</label>
                         <input
                             type="text"
                             className="form-control"
                             id="email"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            placeholder="Ejemplo: user@gmail.com"
+                            placeholder="Ejemplo: user2024"
                             required
                         />
                     </div>
 
                     <div className="mb-4">
-                        <label htmlFor="password" className="form-label ">Password</label>
+                        <label htmlFor="password" className="form-label ">Contraseña</label>
                         <input
                             type="password"
                             className="form-control"
@@ -103,7 +102,7 @@ export default function Login() {
                     </div>
 
                     <div className="text-center">
-                        <button type="submit" className=" w-100 mb-3">Ingresar</button>
+                        <button type="submit" className="w-100 mb-3 btn btn-outline-primary p-2">Ingresar</button>
                         <Link to='/register' className="text-white"> ¿No tienes una cuenta? Regístrate</Link>
                     </div>
 

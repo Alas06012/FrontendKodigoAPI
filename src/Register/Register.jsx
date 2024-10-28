@@ -111,7 +111,7 @@ export default function Register() {
     };
 
     return (
-        <div className="d-flex align-items-center justify-content-center text-white p-3 p-md-5 mt-5">
+        <div className="d-flex align-items-center justify-content-center text-white p-3 p-md-5 mt-5 bg-dark ">
             <div className="w-10">
                 <h2 className="text-2xl fw-bold">
                     <span style={{ color: '#803cae' }}>Registro de Usuarios</span>

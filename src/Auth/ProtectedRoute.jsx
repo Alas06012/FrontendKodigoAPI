@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProtectedRoute = ({ children }) => {
     const [isAuthenticated, setIsAuthenticated] = useState(null);
     const token = localStorage.getItem('token');
+    const navigate = useNavigate();
 
     useEffect(() => {
         const verifyToken = async () => {
@@ -35,7 +36,7 @@ const ProtectedRoute = ({ children }) => {
     }, [token]);
 
 
-    return isAuthenticated ? children : <Link to="/login" />;
+    return isAuthenticated ? children : navigate('/');
 };
 
 export default ProtectedRoute;
