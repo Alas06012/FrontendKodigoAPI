@@ -30,6 +30,7 @@ export default ({onUpdateChips, initialChips = []}) => {
           placeholder="New tag"
         />
         <button
+          type="button"
           className="btn btn-primary mt-2"
           onClick={handleAddChip}
           disabled={!inputValue.trim()}
