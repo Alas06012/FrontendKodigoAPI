@@ -111,8 +111,8 @@ export default function Register() {
     };
 
     return (
-        <div className="d-flex align-items-center justify-content-center bg-dark text-white p-3 p-md-5">
-            <div className="w-100" style={{ maxWidth: '400px' }}>
+        <div className="d-flex align-items-center justify-content-center text-white p-3 p-md-5 mt-5">
+            <div className="w-10">
                 <h2 className="text-2xl fw-bold">
                     <span style={{ color: '#803cae' }}>Registro de Usuarios</span>
                 </h2>
@@ -133,7 +133,7 @@ export default function Register() {
                         />
                     </div>
                     <div className="text-center">
-                        <button type="submit" className=" w-100 mb-3">Registrar</button>
+                        <button type="submit" className="w-100 mb-3 btn" style={{ background: '#803cae' }}>Registrar</button>
                     </div>
                 </form>
 
